@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3dfdf;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+    .navbar {
+        background-color: #f8f9fa;
+        padding: 15px 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        .navContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .navbarBrand {
+                font-size: 24px;
+                text-decoration: none;
+                color: #333;
+            }
+
+
+            .navLinks {
+                display: flex;
+                gap: 20px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                a {
+                    cursor: pointer;
+                }
+
+                .navLink {
+                    text-decoration: none;
+                    color: #333;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+
+            #navbarToggler {
+                display: none;
+
+                .navbarTogglerIcon {
+                    background-color: #333;
+                    width: 30px;
+                    height: 3px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    header {
+        display: flex;
+        padding: 20px;
+        background-color: #007bff;
+        justify-content: space-between;
+        height: 30px;
+
+        select {
+            font-size: 12px;
+            width: 100px;
+
+            option {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .addButton {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-right: 1200px;
+        width: 100px;
+    }
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        th,
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #000;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .detailButton {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .deleteButton {
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .detailButton:hover {
+            background-color: #0056b3;
+        }
+
+        .deleteButton:hover {
+            background-color: #cc0000;
+        }
+    }
+
+    .formContainer {
+        text-align: center;
+        margin-top: 30px;
+
+        .formCard {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            max-width: 600px;
+
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input,
+        select {
+            text-align: center;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        h2 {
+            margin: 0 0 20px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        .navbar {
+            width: 1000px;
+        }
+
+        table {
+            width: 1100px;
+            height: 500px;
+        }
+
+        .formContainer { 
+            align-items: center;
+            justify-content: center;
+            height: 1000px;
+            .formCard {
+
+               height: 500px;
+               width: 500px;
+            }
+        }
+    }
+}
