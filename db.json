@@ -1,0 +1,39 @@
+{
+  "password": [
+    {
+      "id": 1,
+      "provider": "phincon.com",
+      "email": "mail@phincon.com",
+      "password": "Bethebest123",
+      "category": "work"
+    },
+    {
+      "email": "khafidulmualif@gmail.com",
+      "password": "Alif123",
+      "provider": "google",
+      "category": "",
+      "id": 6
+    },
+    {
+      "email": "kmalif@mail.com",
+      "password": "alif123",
+      "provider": "youtube.com",
+      "category": "personal",
+      "id": 7
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "work"
+    },
+    {
+      "id": 2,
+      "name": "family"
+    },
+    {
+      "id": 3,
+      "name": "personal"
+    }
+  ]
+}
